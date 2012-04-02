@@ -1,6 +1,9 @@
 <?php
 
 require('horatio.php');
-phpinfo();
+
+$req = new Request();
+$response = $req->dispatch();
+echo $response;
 
 ?>
